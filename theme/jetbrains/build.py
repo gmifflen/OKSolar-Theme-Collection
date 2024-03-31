@@ -1,23 +1,31 @@
 import sublate as sub
 
-print("[+] JetBrains")
 
-sub.mkdir("resources/schemes")
-sub.mkdir("src")
+def main():
+    print("[+] Building JetBrains theme")
 
-for theme in sub.data["colors"]:
-    # schemes
-    sub.render(f"resources/schemes/{theme['id']}.xml", "templates/scheme.xml", {
-        "theme": theme, "italics": True
-    })
-    sub.render(f"resources/schemes/{theme['id']}-no-italics.xml", "templates/scheme.xml", {
-        "theme": theme, "italics": False
-    })
+    # make directories
+    sub.mkdir("resources/schemes")
+    sub.mkdir("src")
 
-    # themes
-    sub.render(f"src/{theme['id']}.theme.json", "templates/theme.json", {
-        "theme": theme
-    })
+    # loop through themes and render the XML schemes and JSON themes
+    for theme in sub.data["colors"]:
+        for italics in [True, False]:
+            scheme_file = f"{theme['id']}-{'no-' if not italics else ''}italics.xml"
+            sub.render(
+                f"resources/schemes/{scheme_file}",
+                "templates/scheme.xml",
+                {"theme": theme, "italics": italics},
+            )
 
-sub.rm("templates")
-sub.rm("build.py")
+        sub.render(
+            f"src/{theme['id']}.theme.json", "templates/theme.json", {"theme": theme}
+        )
+
+    # cleanup
+    sub.rm("templates")
+    sub.rm("build.py")
+
+
+if __name__ == "__main__":
+    main()
