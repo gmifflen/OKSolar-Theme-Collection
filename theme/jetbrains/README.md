@@ -1,4 +1,4 @@
-# Solarized for JetBrains
+# OKSolar for JetBrains
 
 ## Build
 
@@ -11,10 +11,10 @@ To build the plugin for IntelliJ, follow these steps:
 
 ## Screenshots
 
-### Solarized Dark:
+### OKSolar Dark:
 
-![Solarized Dark](screenshots/solarized-dark.png)
+TBD
 
-### Solarized Light:
+### OKSolar Light:
 
-![Solarized Light](screenshots/solarized-light.png)
+TBD
