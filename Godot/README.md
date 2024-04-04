@@ -1,7 +1,7 @@
 # Godot 4.x - Interface Theme (Godot Engine Interface)
 
 The interface theme is a little more annoying to do :( 
-I'm still trying to find a good way to do it, maybe something like how (bitbrain/godot-dash)[https://github.com/bitbrain/godot-dash/tree/main] or (passivestar/godot-minimal-theme)[https://github.com/passivestar/godot-minimal-theme/tree/main] do it, or 
+I'm still trying to find a good way to do it, maybe something like how [bitbrain/godot-dash](https://github.com/bitbrain/godot-dash/tree/main) or [passivestar/godot-minimal-theme](https://github.com/passivestar/godot-minimal-theme/tree/main) do it, or 
 
 
 Go to `Editor` --> `Interface` --> `Theme`
