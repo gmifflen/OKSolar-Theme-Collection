@@ -16,3 +16,5 @@
 | blue       | 63.1%        | 0.141  | 244.8| #2b90d8 |
 | cyan       | 63.1%        | 0.102  | 187.2| #259d94 |
 | green      | 63.1%        | 0.148  | 118.8| #819500 |
+
+![OKSolar Palette]([image_url](https://raw.githubusercontent.com/gmifflen/OKSolar-Theme-Collection/master/oksolar-palette.png))
